@@ -24,8 +24,11 @@ the second button represents the second and so on.
 While holding down shift, these same four button alter the length.
 
 shift + button 1 = 16  divisions
+
 shift + button 2 = 32  divisions
+
 shift + button 3 = 64  divisions
+
 shift + button 4 = 128 divisions
 
 The appropriate amount of button then begin flashing apart from the selected section which remains solid.
