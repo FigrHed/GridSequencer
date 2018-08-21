@@ -36,13 +36,19 @@ The appropriate amount of button then begin flashing apart from the selected sec
 If you want to navigate to a section after the first four, you must hold down alt (the fifth button from the left)
 
 button 1 = begins at 0
+
 button 2 = begins at 16
+
 button 3 = begins at 32
+
 button 4 = begins at 48
 
 alt + button 1 = begins at 64
+
 alt + button 2 = begins at 80
+
 alt + button 3 = begins at 96
+
 alt + button 4 = begins at 112
 
 At the moment, the length is capped at 128 but you are welcome to change this.
