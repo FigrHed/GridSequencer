@@ -5,35 +5,22 @@ It works immediately with a 256 grid as a 14*16 step sequencer Max for Live MIDI
 
 The First Row is a playhead with no touch functionality at this time.
 
-The next 14 rows are the sequencer space. Each button acts as a toggle and a light on represents a note. When the playhead reaches the end, It returns to the start and continues playing as a loop.
+
+The next 14 rows are the sequencer space. 
+(Each button acts as a toggle and a light on represents a note. When the playhead reaches the end, It returns to the start and continues playing as a loop.)
 
 The notes are by default chromatically ascending from C1 but can be quickly changed with the mouse or with a midi controller.
-Click the box next to the note that represents the row you would like to change and send MIDI to the channel to change the note.
-Pressing the bottom right button("shift") puts the device into select mode and the selected row will be highlighted. Press any button on the row while still holding shift to change the selected row.
 
-The length can be changed with the length number box in the device, and the offset can be changed to reach the parts of the loop that are not visible.
-This enables a greater degree of freedom and fluidity when making loops.
-A MIDI controller (or an arc) can be mapped to either of these but for convenience and dexterity, the bottom row acts as a editting/navigation control.
 
-The far right button on the bottom row shall be called "Shift", and the 5th button from the left shall be call "Alt.
+The bottom row is left over to use as controls for navigation/editing/various functions you may use while making loops.
 
-The four buttons closest to the left are for navigating.
-The first button represents the first section (16 of whichever unit we are counting in)
-the second button represents the second and so on.
+The button on the far right shall be called "Select", and the 5th button from the left shall be called "Alt".
 
-While holding down shift, these same four button alter the length.
+The four buttons closest to the left are for navigating:
+The first button navigates the first section (of 16 whichever unit we are counting in)
+the second button represents the second section, and so on.
 
-shift + button 1 = 16  divisions
-
-shift + button 2 = 32  divisions
-
-shift + button 3 = 64  divisions
-
-shift + button 4 = 128 divisions
-
-The appropriate amount of button then begin flashing apart from the selected section which remains solid.
-
-If you want to navigate to a section after the first four, you must hold down alt (the fifth button from the left)
+To reach the fifth section or further you must hold down Alt.
 
 button 1 = begins at 0
 
@@ -53,14 +40,38 @@ alt + button 4 = begins at 112
 
 At the moment, the length is capped at 128 but you are welcome to change this.
 
-Next we have the two modes, pitch mode and velocity mode.
 
-While holding shift, the 13th button will put the device in pitch editting mode (where it opens at) and the 14th button will put it in Velocity editing mode, where the selected row (again, changed in select mode by holding shift) can have each event's velocity changed.
+
+While holding down shift, these same four button alter the length.
+
+shift + button 1 = 16  divisions
+
+shift + button 2 = 32  divisions
+
+shift + button 3 = 64  divisions
+
+shift + button 4 = 128 divisions
+
+The looping sections then begin flashing while the selected section remains solid.
+
+The loop length can also be changed with the number box in the device window, which can be easily mapped to a MIDI controller or arc.
+
+
+Next we have the three modes, select mode, pitch mode and velocity mode.
+
+Click the box next to the note that represents the row you would like to change and send MIDI to the channel to change the note.
+Holding the bottom right button("shift") puts the device into select mode and the selected row will be highlighted. Press any button on the row while still holding shift to change the selected row.
+
+
+Holding select and the 13th button will put the device in pitch editing mode (which is the mode the device begins in) and the 14th button will put it in Velocity editing mode, where (again, changed in select mode by holding shift) you can change the velocity of the notes on the selected row.
+
+
 The default is the 10th row which I think is about 100.
+
 
 Now lastly we have two convenience functions:
 
-While holding the the shift key, pressing the 9th button will create a new MIDI clip in the track the device is on out of the loop created on the grid and then trigger it. While the track has a clip playing, it will have its own MIDI disabled, this means you can't change the notes with MIDI either.
+While holding the the select key, pressing the 9th button will create a new MIDI clip in the track the device is on out of the loop created on the grid and then trigger it. While the track has a clip playing, it will have its own MIDI disabled, this means you can't change the notes with MIDI either.
 
 Pressing the 9th button with the shift AND alt buttons held will clear the current loop in the device.
 It may be a bad idea to have the same button do those two divergent things, but I deliberately made it so that you need to use two hands to clear your work so its hard to accidentally do it.
