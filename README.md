@@ -72,6 +72,7 @@ Holding select and the 13th button will put the device in pitch editing mode (wh
 
 
 VELOCITY MODE
+
 The 14th button will put it in Velocity editing mode, where  you can change the velocity of the notes on the selected row.
 (again, you can change the selected row by holding select)
 
