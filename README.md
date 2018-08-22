@@ -59,14 +59,24 @@ The loop length can also be changed with the number box in the device window, wh
 
 Next we have the three modes, select mode, pitch mode and velocity mode.
 
-Click the box next to the note that represents the row you would like to change and send MIDI to the channel to change the note.
+SELECT MODE
+
 Holding the bottom right button("shift") puts the device into select mode and the selected row will be highlighted. Press any button on the row while still holding shift to change the selected row.
+Any MIDI note to the channel will change the note.
+You can also change the notes associated with the rows by clicking the boxes in the device.
 
 
-Holding select and the 13th button will put the device in pitch editing mode (which is the mode the device begins in) and the 14th button will put it in Velocity editing mode, where (again, changed in select mode by holding shift) you can change the velocity of the notes on the selected row.
+PITCH MODE (DEFAULT)
 
+Holding select and the 13th button will put the device in pitch editing mode (which is the mode the device begins in) 
+
+
+VELOCITY MODE
+The 14th button will put it in Velocity editing mode, where  you can change the velocity of the notes on the selected row.
+(again, you can change the selected row by holding select)
 
 The default is the 10th row which I think is about 100.
+
 
 
 Now lastly we have two convenience functions:
